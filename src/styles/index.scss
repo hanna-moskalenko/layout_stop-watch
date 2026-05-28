@@ -24,6 +24,7 @@ body {
 }
 
 .stopwatch {
+  box-sizing: content-box;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -41,7 +42,7 @@ body {
     width: 20vmin;
     background-color: #0700ff;
 
-    animation: move 3600s steps(60, jump-start) infinite;
+    animation: move 3600s steps(60) infinite;
     transform-origin: $position-origin;
     top: 50%;
     left: 50%;
